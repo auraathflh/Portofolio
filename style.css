@@ -1,0 +1,928 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ========== BODY ========== */
+body {
+    font-family: 'Poppins';
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========== HEADER ========== */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 15px solid #6CA5D4;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    left: 10px; /* Atur ke kiri */
+    top: 10px;
+    width: 25px; /* Ukuran lebih besar biar jelas */
+    height: auto;
+    margin-left: -120px;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px; /* Jarak antar menu */
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+    padding: 10px 15px; /* Tambahin padding biar lebih klik-able */
+}
+
+.nav-link:hover {
+    color: #6CA5D4;
+}
+
+
+/* ========== NAVIGATION ========== */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 30px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #6CA5D4;
+}
+
+/* ========== HERO SECTION FULL PAGE ========== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; 
+    padding: 0 10%;
+    background-color: #ffffff;
+}
+
+.hero-text {
+    max-width: 500px;
+    line-height: 1.6; 
+    margin-right: 50px;
+}
+
+.hero-title {
+    font-size: 35px;
+    font-weight: 200;
+    color: #000000;
+    margin-bottom: 5px; 
+}
+
+.job-title {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #6CA5D4;
+    margin-bottom: 5px; 
+}
+.job2-title {
+    font-size: 70px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 5px; 
+}
+
+.hero-text p {
+    font-size: 20px;
+    font-weight: 100;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 15px; 
+    margin-top: 10px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #90BFE2;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.cta:hover {
+    background: #E2EFF8;
+}
+
+.profile-pic {
+    width: 457px; 
+    height: 467px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+
+/* ========== ABOUT ME SECTION FULL PAGE ========== */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Supaya konten di tengah */
+    justify-content: center;
+    text-align: center;
+    padding: 80px 10%;
+    border-top: 10px solid #E2EFF8;
+    border-bottom: 10px solid #E2EFF8;
+}
+
+
+/* Judul "About Me!" */
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Jarak lebih lega */
+    margin-right: 100px;
+}
+
+/* Layout About Me */
+.about-content {
+    display: flex;
+    align-items: center; /* Supaya gambar dan teks sejajar */
+    justify-content: flex-start; /* Posisikan ke tengah */
+    gap: 50px; /* Atur jarak antara gambar & teks */
+    max-width: 900px; /* Batas lebar */
+    margin: 0 auto; /* Supaya tetap di tengah */
+    flex-wrap: wrap;
+}
+
+.about-image {
+    margin-left: -50px; /* Geser foto ke kiri */
+}
+
+/* Gambar About Me */
+.about-image img {
+    width: 300px; /* Perbesar agar lebih proporsional */
+    height: 300px;
+    border-radius: 60%;
+    object-fit: cover;
+    border: 15px solid #E2EFF8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Teks About Me */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around; /* Agar lebih rata */
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.skill {
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.skill:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 2px;
+    background-color: #ddd;
+}
+.about-content {
+    margin: 0 auto 0 0; /* Paksa geser ke kiri */
+}
+
+
+
+
+/* ========== SKILLS SECTION ========== */
+.skills-container {
+    display: flex;
+    justify-content: space-around; /* Biar lebih rata */
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 80px; /* Tambah jarak biar nggak numpuk */
+}
+
+.skill-box {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.skill-box h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ===== EXPERTISE SECTION ===== */
+.expertise {
+    min-height: 100vh; /* Biar sehalaman penuh */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Tengahin kontennya */
+    align-items: center;
+    padding: 50px 20px; /* Biar ada ruang */
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.expertise-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.expertise-box {
+    background: #e5f1ff; /* Warna background kotaknya */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.expertise-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ========== REASON SECTION ========== */
+.reason-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    background-color: #E2EFF8; 
+    padding: 70px 0;
+}
+
+.reason-box {
+    background: none;
+    font-weight: bold;
+    text-align: center;
+    max-width: 250px;
+}
+
+.reason-box span {
+    font-weight: normal;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Posisi masing-masing */
+.top {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.reason-title {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.bottom {
+    grid-column: 2;
+    grid-row: 3;
+}
+/* ========== TESTIMONIALS SECTION ========== */
+.testimonial-section {
+    text-align: center;
+    padding: 50px 20px; 
+    background-color: #ffffff;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-section h2 {
+    margin-bottom: 10px; 
+    font-size: 28;
+}
+
+.testimonial-slider {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+}
+
+.testimonial-card {
+    background: #D6E4FF;
+    padding: 25px; /* Tambah padding */
+    border-radius: 10px; /* Samakan dengan Figma */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid white;
+}
+
+.testimonial-card h4 {
+    margin-top: 35px; /* Kurangi jarak biar hemat ruang */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.testimonial-card span {
+    font-size: 14px;
+    color: #555;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 15px; /* Supaya dots lebih ke atas */
+}
+
+.dots-container .dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.dots-container .dot.active {
+    background-color: #333; /* Warna aktif */
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+    .testimonial-slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .testimonial-card {
+        width: 90%; /* Lebih fleksibel di layar kecil */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .testimonial-slider {
+        grid-template-columns: repeat(1, 1fr); /* 1 kolom di mobile */
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+}
+
+/* ========== PROJECTS SECTION ========== */
+.latest-projects {
+    text-align: center;
+    margin: 50px 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.latest-projects h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden; /* Supaya hanya beberapa project yang terlihat */
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.project {
+    background: #E3F2FD;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex: 0 0 auto;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.project p {
+    font-size: 16px;
+    color: #333;
+}
+
+.nav-button {
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 50px; /* Sesuaikan ukuran */
+    height: 50px; /* Sesuaikan ukuran */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pastikan tombol berada di posisi yang benar */
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/* ========== CONTACT SECTION ========== */
+.contact {
+    background-color: #FFFFFF;
+    padding: 80px 10%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-content {
+    width: 45%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact h2 {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.contact h2 span {
+    color: black;
+}
+
+.contact h2 b {
+    color: #6DA7DB;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    background: #EAF2FF;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.contact-info img {
+    width: 24px;
+}
+
+.contact-left {
+    width: 45%;
+}
+
+.contact-left p {
+    font-size: 16px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-left img {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+.contact-form {
+    background: #EAF2FF;
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Perbaiki ukuran input & textarea */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #C4D7F2;
+    background: #EAF2FF;
+    font-size: 16px;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Button lebih proporsional */
+.contact-form button {
+    background-color: #6DA7DB;
+    border: none;
+    padding: 12px 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #5A92C8;
+}
+
+button {
+    background-color: #66a3ff; /* Warna biru yang lebih kontras */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative; /* Pastikan tidak ketutupan */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Lebih soft */
+}
+
+button:hover {
+    background-color: #4a90e2; 
+    transform: scale(1.05); /* Efek membesar dikit */
+}
+
+
+/* Responsif */
+@media (max-width: 1024px) {
+    .contact {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-content {
+        width: 90%;
+        text-align: center;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+
+
+/* ========== FOOTER SECTION ========== */
+.footer {
+    background-color: #D2E4F2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-socials img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.footer-column {
+    text-align: left;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+
+
+/* ========== TABLET (max-width: 1024px) ========== */
+@media (max-width: 1024px) {
+    /* HEADER */
+    .header {
+        padding: 10px 5%;
+    }
+
+    /* NAVIGATION */
+    .nav ul {
+        gap: 20px; /* Perkecil jarak antar menu */
+        font-size: 16px; /* Perkecil ukuran font */
+    }
+
+    .logo {
+        width: 35px; /* Sedikit lebih kecil */
+        margin-left: 0;
+    }
+
+   /* HERO SECTION */
+   .hero {
+    flex-direction: column; /* Stack elemen ke bawah */
+    text-align: center;
+    padding: 40px 5%;
+    height: auto;
+}
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 5%;
+    height: auto;
+}
+
+.hero-text {
+    max-width: 80%;
+    margin-bottom: 10px;
+}
+
+.hero-title {
+    font-size: 24px;
+}
+
+.job-title, .job2-title {
+    font-size: 36px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    line-height: 1.4;
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.cta {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.profile-pic {
+    width: 280px;
+    height: 280px;
+    margin-top: 15px;
+}
+}
+
+/* Expertise */
+
+
+/* ========== MOBILE (max-width: 430px) ========== */
+@media (max-width: 430px) {
+    /* HEADER */
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        flex-direction: column !important;
+        text-align: center !important;
+        padding: 20px !important;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 10px;
+    }
+
+    .hero button {
+        font-size: 1rem;
+        padding: 10px 15px;
+        margin-top: 15px;
+    }
+
+    /* GAMBAR */
+    .hero img {
+        width: 90%;
+        max-width: 300px;
+        height: auto;
+        margin-top: 20px;
+    }
+}
