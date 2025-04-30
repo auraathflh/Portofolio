@@ -24,12 +24,29 @@
             </ul>
         </nav>
     </header>
+    <header>
+        <button class="hamburger" id="hamburger">
+            ☰
+        </button>
+        <nav class="nav-menu" id="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
     <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-text">
             <h1 class="hero-title">Hallo! I'm Aura</h1>
-            <h2 class="job-title">UI/UX DESIGNER</h2>
+            <h2 class="job-title">UI/UX</h2>
+            <h2 class="job2-title">DESIGNER</h2>
             <p class="hero-description">I'm a UI/UX Designer based in Indonesia. I will help you build a beautiful website that your users will love.</p>
             <a href="#" class="cta">HIRE ME</a>
         </div>
@@ -49,19 +66,21 @@
                 <h3 class="about-name">Hello, I’m Aura Alima Thufailah!</h3>
                 <p class="about-description">I'm a UI Designer & UX Researcher passionate about intuitive, aesthetic, and research-driven design. I studied Informatics at Universitas Siliwangi, building a strong foundation in UX and data-driven solutions.</p>
                 <h3 class="skills-title">Skills & Interests</h3>
-                <div class="skills">
-                    <div class="skill">
-                        <h4>UI/UX Design</h4>
-                        <p>Wireframing, prototyping, usability testing</p>
+                    <div class="skills-container">
+                        <div class="skill">
+                            <h4>UI/UX Design</h4>
+                            <p>Wireframing, prototyping, usability testing</p>
+                        </div>
+                        <div class="skill">
+                            <h4>Tools</h4>
+                            <p>Figma, Adobe XD, Miro, Notion</p>
+                        </div>
+                        <div class="skill">
+                            <h4>UX Research</h4>
+                            <p>User interviews, surveys, data analysis</p>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <h4>Tools</h4>
-                        <p>Figma, Adobe XD, Miro, Notion</p>
-                    </div>
-                    <div class="skill">
-                        <h4>UX Research</h4>
-                        <p>User interviews, surveys, data analysis</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -126,13 +145,15 @@
             <p>"Aura truly understands user needs and transforms them into intuitive, engaging designs. Highly professional!"</p>
         </div>
     </div>
-    <div class="dots">
+    <div class="dots" aria-label="Testimonial navigation">
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
+</section>
 <section class="latest-projects">
     <h2>Latest Projects</h2>
+    <button class="nav-button prev">&lt;</button>
     <div class="projects-container">
         <div class="project">
             <img src="ladangku.png" alt="UI/UX Mobile App LadangKu">
@@ -144,29 +165,35 @@
             <h3>CATOPIA</h3>
             <p>Catopia is a one-stop platform for cat lovers, offering education, a marketplace, adoption, community, and pet care.</p>
         </div>
+        <button class="nav-button next">&gt;</button>  
     </div>
 </section>
 <section class="contact">
-    <div class="contact-content">
-        <h2><span>Lets</span> <b>Design</b> <span>Together !</span></h2>
-        <div class="contact-info">
-            <p><img src="email-icon.png" alt="Email"> auraa@gmail.com</p>
-            <p><img src="instagram-icon.png" alt="Instagram"> auraathflh</p>
+    <div class="contact-left">
+        <h2>Let's <b>Design</b> Together!</h2>
+        <p><img src="email-icon.png" alt="Email"> auraa@gmail.com</p>
+        <p><img src="instagram-icon.png" alt="Instagram"> auraathflh</p>
+    </div>
+
+    <div class="contact-right">
+        <div class="contact-form">
+            <form id="contactForm">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Enter your name">
+              
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+              
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your message..."></textarea>
+              
+                <button type="submit">Submit</button>
+              </form>              
         </div>
-        <form class="contact-form">
-            <label for="name">Nama</label>
-            <input type="text" id="name" placeholder="enter your name">
-            
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="enter your email">
-            
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="your message..."></textarea>
-            
-            <button type="submit">Submit</button>
-        </form>
     </div>
 </section>
+
+
 <footer class="footer">
     <div class="footer-container">
         <div class="footer-left">
@@ -214,6 +241,9 @@
         <p>© Copyright. All rights reserved</p>
     </div>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
